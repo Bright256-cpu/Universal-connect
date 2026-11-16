@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Universal Connect</title>
+  <meta name="description" content="A friendly community where people connect, share and grow together.">
+  <style>
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+      color: #2d3748;
+      background: #f7f9fc;
+      line-height: 1.6;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 6%;
+      flex-wrap: wrap;
+    }
+    .logo { font-size: 1.4rem; font-weight: 700; color: #ff6f61; }
+    nav ul { list-style: none; display: flex; gap: 24px; margin: 0; padding: 0; align-items: center; flex-wrap: wrap; }
+    nav a { text-decoration: none; color: #2d3748; font-weight: 500; }
+    nav a:hover { color: #ff6f61; }
+    .nav-btn {
+      background: #25d366;
+      color: #fff !important;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .hero {
+      background: linear-gradient(135deg, rgba(255,140,66,0.92), rgba(255,111,97,0.92));
+      color: #fff;
+      text-align: center;
+      padding: 100px 6% 90px;
+    }
+    .hero h1 { font-size: 3rem; margin: 0 0 16px; }
+    .hero p { font-size: 1.25rem; max-width: 650px; margin: 0 auto 30px; }
+    .btn {
+      display: inline-block;
+      padding: 14px 32px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 700;
+      margin: 6px;
+    }
+    .btn-white { background: #fff; color: #ff6f61; }
+    .btn-green { background: #25d366; color: #fff; }
+    section { padding: 70px 6%; max-width: 1100px; margin: 0 auto; }
+    section h2 { text-align: center; font-size: 2rem; margin: 0 0 12px; }
+    .sub { text-align: center; color: #718096; max-width: 600px; margin: 0 auto 40px; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
+    .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 14px; box-shadow: 0 6px 16px rgba(0,0,0,0.15); }
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 22px; }
+    .feature { background: #fff; padding: 28px; border-radius: 14px; box-shadow: 0 4px 14px rgba(0,0,0,0.07); text-align: center; }
+    .feature .icon { font-size: 2.2rem; }
+    .feature h3 { margin: 10px 0 6px; }
+    .contact-card { background: #fff; max-width: 520px; margin: 0 auto; padding: 36px; border-radius: 16px; box-shadow: 0 6px 20px rgba(0,0,0,0.1); text-align: center; }
+    .contact-card p { margin: 8px 0; font-size: 1.1rem; }
+    .contact-card a.link { color: #ff6f61; text-decoration: none; font-weight: 600; }
+    footer { background: #2d3748; color: #cbd5e0; text-align: center; padding: 30px 6%; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      nav ul { gap: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Universal Connect</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#gallery">Community</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://chat.whatsapp.com/ItZRiP6fhVy2qzkqS63ZV2" class="nav-btn" target="_blank" rel="noopener">Join</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero" id="home">
+    <h1>Connecting people, everywhere.</h1>
+    <p>Universal Connect is a friendly community where friends and family meet, share and grow together.</p>
+    <a class="btn btn-green" href="https://chat.whatsapp.com/ItZRiP6fhVy2qzkqS63ZV2" target="_blank" rel="noopener">Join our WhatsApp group</a>
+    <a class="btn btn-white" href="#contact">Contact us</a>
+  </div>
+
+  <section id="about">
+    <h2>About us</h2>
+    <p class="sub">We believe good things happen when people connect. Here is what you can expect from our community.</p>
+    <div class="features">
+      <div class="feature">
+        <div class="icon">&#129309;</div>
+        <h3>Friendly people</h3>
+        <p>A warm, welcoming space where everyone belongs.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">&#128172;</div>
+        <h3>Stay in touch</h3>
+        <p>Chat, share news and keep up with the group on WhatsApp.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">&#127793;</div>
+        <h3>Grow together</h3>
+        <p>Share ideas, support each other and learn from one another.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Our community</h2>
+    <p class="sub">Smiles, friendships and good times.</p>
+    <div class="gallery">
+      <img src="happy1.jpg" alt="Happy friends together">
+      <img src="happy2.jpg" alt="Smiling woman">
+      <img src="happy3.jpg" alt="Group of friends taking a selfie">
+      <img src="happy4.jpg" alt="Friends sitting together">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <p class="sub">We would love to hear from you.</p>
+    <div class="contact-card">
+      <p>Email: <a class="link" href="mailto:opbrightjonathan@gmail.com">opbrightjonathan@gmail.com</a></p>
+      <p>Phone: <a class="link" href="tel:+256794239836">+256794239836</a></p>
+      <a class="btn btn-green" href="https://chat.whatsapp.com/ItZRiP6fhVy2qzkqS63ZV2" target="_blank" rel="noopener">Join our WhatsApp group</a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Universal Connect. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
